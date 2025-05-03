@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sportland - Unite al movimiento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #5e60ce;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background-color: #4cc9f0;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .features, .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      text-align: center;
+    }
+    .testimonial {
+      font-style: italic;
+      margin-top: 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, select, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #5e60ce;
+      color: white;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>¿Querés hacer deporte pero no sabés con quién?</h1>
+    <p>Unite a eventos deportivos cerca tuyo y conectá con personas con tu misma energía.</p>
+    <a href="#registro" class="cta-button">📍 QUIERO UNIRME A UN EVENTO</a>
+  </header>
+
+  <section class="section features">
+    <h2>✅ Lo que podés hacer</h2>
+    <p>✔ Participá en actividades deportivas reales</p>
+    <p>✔ Conocé gente en tu barrio</p>
+    <p>✔ Organizá tu propio evento y sumá jugadores</p>
+  </section>
+
+  <section class="section steps">
+    <h2>🔁 ¿Cómo funciona?</h2>
+    <p>1. Elegí tu deporte y encontrá eventos cercanos</p>
+    <p>2. Sumate o creá uno propio</p>
+    <p>3. Conectá con otros y jugá</p>
+  </section>
+
+  <section class="section testimonials">
+    <h2>📣 Testimonios</h2>
+    <div class="testimonial">“Me mudé hace poco y gracias a Sportland encontré gente con la que entrenar.” — Martín, Palermo</div>
+    <div class="testimonial">“Organizar mi propio partido fue fácil y divertido. Volvería a usarla.” — Sofía, Caballito</div>
+  </section>
+
+  <section id="registro" class="section">
+    <h2>🚀 Unite a la comunidad Sportland</h2>
+    <form action="https://formsubmit.co/hans.wassermann1995@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu mail o WhatsApp" required>
+      <input type="text" name="zona" placeholder="Zona donde querés hacer deporte">
+      <input type="text" name="deportes" placeholder="¿Qué deportes practicás?">
+      <select name="rol">
+        <option value="participar">Quiero participar</option>
+        <option value="organizar">También quiero organizar</option>
+      </select>
+      <button type="submit">🔔 Quiero recibir los próximos eventos</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Seguinos en Instagram: @sportland.arg</p>
+    <p>Consultas: hans.wassermann1995@gmail.com</p>
+  </footer>
+</body>
+</html>
